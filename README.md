@@ -17,12 +17,9 @@ This module depends on a correctly configured [GitHub Provider](https://www.terr
 Add the module to your Terraform resources like so:
 
 ```hcl
-module "simple_example" {
-  source  = "devdynamicio/terrraform-github-repository"
+module "repository" {
+  source  = "devdynamicio/repository/github"
   version = "1.0.0"
-
-  name       = "simple"
-  visibility = false
 }
 ```
 
